@@ -5,12 +5,11 @@
             "phases": {
                 "install": {
                     "cmds": [
-                        "composer install --no-dev --optimize-autoloader",
-                        "php artisan migrate --force"
+                        "composer install --no-dev --optimize-autoloader"
                     ]
                 },
                 "start": {
-                    "cmd": "php artisan serve --host 0.0.0.0 --port 8000"
+                    "cmd": "php -S 0.0.0.0:8080 -t public"
                 }
             }
         }
