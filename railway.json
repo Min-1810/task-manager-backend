@@ -5,13 +5,7 @@
             "phases": {
                 "install": {
                     "cmds": [
-                        "composer install --no-dev --optimize-autoloader"
-                    ]
-                },
-                "build": {
-                    "cmds": [
-                        "php artisan config:cache",
-                        "php artisan route:cache",
+                        "composer install --no-dev --optimize-autoloader",
                         "php artisan key:generate",
                         "php artisan migrate --force"
                     ]
